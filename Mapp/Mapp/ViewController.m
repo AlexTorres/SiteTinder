@@ -9,6 +9,12 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *notMatchButton;
+@property (weak, nonatomic) IBOutlet UIButton *matchButton;
+@property (weak, nonatomic) IBOutlet UIView *matchContainer;
+@property (weak, nonatomic) IBOutlet CSAnimationView *matchAnimationView;
+
+@property (weak, nonatomic) IBOutlet CSAnimationView *notMatchAnimationView;
 
 @end
 
@@ -23,5 +29,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)matchAction:(id)sender {
+    [self.matchAnimationView startCanvasAnimation];
+ 
+}
+- (IBAction)notMatchAction:(id)sender {
+    [self.notMatchAnimationView startCanvasAnimation];
+}
+
 
 @end

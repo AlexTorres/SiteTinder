@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  Mapp
+//
+//  Created by John A Torres B on 27/09/14.
+//  Copyright (c) 2014 hangover. All rights reserved.
+//
+
+#ifndef Mapp_PrefixHeader_pch
+#define Mapp_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "Canvas.h"
+
+#endif

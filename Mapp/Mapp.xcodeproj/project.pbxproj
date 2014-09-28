@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A828184AF7B482FB610A8E9 /* libPods-Mapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F59B75F7AF1C4B7695C02F44 /* libPods-Mapp.a */; };
 		F57E78D119D7139E009BA4F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E78D019D7139E009BA4F2 /* main.m */; };
 		F57E78D419D7139E009BA4F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E78D319D7139E009BA4F2 /* AppDelegate.m */; };
 		F57E78D719D7139E009BA4F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E78D619D7139E009BA4F2 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA67A9FA5EBD4698AD2E377B /* Pods-Mapp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapp.xcconfig"; path = "Pods/Pods-Mapp.xcconfig"; sourceTree = "<group>"; };
+		F50F2E5E19D7657E009A6157 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F57E78CB19D7139E009BA4F2 /* Mapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57E78CF19D7139E009BA4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F57E78D019D7139E009BA4F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		F57E78E419D7139E009BA4F2 /* MappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57E78E919D7139E009BA4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F57E78EA19D7139E009BA4F2 /* MappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MappTests.m; sourceTree = "<group>"; };
+		F59B75F7AF1C4B7695C02F44 /* libPods-Mapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A828184AF7B482FB610A8E9 /* libPods-Mapp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9782A16D148E4D55AFA2BB90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F59B75F7AF1C4B7695C02F44 /* libPods-Mapp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F57E78C219D7139E009BA4F2 = {
 			isa = PBXGroup;
 			children = (
 				F57E78CD19D7139E009BA4F2 /* Mapp */,
 				F57E78E719D7139E009BA4F2 /* MappTests */,
 				F57E78CC19D7139E009BA4F2 /* Products */,
+				DA67A9FA5EBD4698AD2E377B /* Pods-Mapp.xcconfig */,
+				9782A16D148E4D55AFA2BB90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +113,7 @@
 			children = (
 				F57E78CF19D7139E009BA4F2 /* Info.plist */,
 				F57E78D019D7139E009BA4F2 /* main.m */,
+				F50F2E5E19D7657E009A6157 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -126,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F57E78EE19D7139E009BA4F2 /* Build configuration list for PBXNativeTarget "Mapp" */;
 			buildPhases = (
+				7B4FAAE8C63B44A4A8521619 /* Check Pods Manifest.lock */,
 				F57E78C719D7139E009BA4F2 /* Sources */,
 				F57E78C819D7139E009BA4F2 /* Frameworks */,
 				F57E78C919D7139E009BA4F2 /* Resources */,
+				ABB3BB37747A4CF1A42556EB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +231,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B4FAAE8C63B44A4A8521619 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABB3BB37747A4CF1A42556EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Mapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F57E78C719D7139E009BA4F2 /* Sources */ = {
@@ -341,8 +392,10 @@
 		};
 		F57E78EF19D7139E009BA4F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA67A9FA5EBD4698AD2E377B /* Pods-Mapp.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Mapp/PrefixHeader.pch;
 				INFOPLIST_FILE = Mapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,8 +404,10 @@
 		};
 		F57E78F019D7139E009BA4F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA67A9FA5EBD4698AD2E377B /* Pods-Mapp.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Mapp/PrefixHeader.pch;
 				INFOPLIST_FILE = Mapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +467,7 @@
 				F57E78F019D7139E009BA4F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F57E78F119D7139E009BA4F2 /* Build configuration list for PBXNativeTarget "MappTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +476,7 @@
 				F57E78F319D7139E009BA4F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
