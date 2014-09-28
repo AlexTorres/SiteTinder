@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet CSAnimationView *matchAnimationView;
 @property (weak, nonatomic) IBOutlet CSAnimationView *notMatchAnimationView;
 @property (strong, nonatomic) VenuesModel * model;
+@property (weak, nonatomic) IBOutlet UINavigationBar *navbar;
 
 @end
 
@@ -29,6 +30,13 @@
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"venues" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     NSError *error;
+    UIImage *image = [UIImage imageNamed:@"logo.png"];
+    UIImageView *titleView = [[UIImageView alloc] initWithImage:image ];
+
+    titleView.bounds = CGRectMake(0, 0, 0, 35);
+    titleView.contentMode = UIViewContentModeCenter;
+    titleView.contentMode = UIViewContentModeScaleAspectFit;
+    [self.navbar.topItem setTitleView:  titleView];
     self.model = [[VenuesModel alloc] initWithData:data error:&error];
     if (error) {
         

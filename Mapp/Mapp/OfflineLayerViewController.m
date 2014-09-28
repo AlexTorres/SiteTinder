@@ -14,6 +14,12 @@
 
 #define kMapboxMapID @"examples.map-z2effxa8"
 
+@interface OfflineLayerViewController ()
+
+@property (weak, nonatomic) IBOutlet UINavigationBar *navbar;
+
+@end
+
 @implementation OfflineLayerViewController
 
 
@@ -22,9 +28,15 @@
 {
     [super viewDidLoad];
 
-    RMMapboxSource *onlineSource = [[RMMapboxSource alloc] initWithMapID:kMapboxMapID];
+    UIImage *image = [UIImage imageNamed:@"logo.png"];
+    UIImageView *titleView = [[UIImageView alloc] initWithImage:image ];
     
-    RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"control-room-0.2.0" ofType:@"mbtiles"];
+    titleView.bounds = CGRectMake(0, 0, 0, 35);
+    titleView.contentMode = UIViewContentModeCenter;
+    titleView.contentMode = UIViewContentModeScaleAspectFit;
+    [self.navbar.topItem setTitleView:  titleView];
+    
+    RMMapboxSource *onlineSource = [[RMMapboxSource alloc] initWithMapID:kMapboxMapID];
     
     CGRect rect = CGRectMake(0, 20, 320, 620);
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:rect andTilesource:onlineSource];

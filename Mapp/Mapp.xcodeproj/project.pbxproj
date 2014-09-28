@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24ABBC6919D87353000159A2 /* OfflineLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABBC6819D87353000159A2 /* OfflineLayerViewController.m */; };
+		24ABBC6B19D8938C000159A2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 24ABBC6A19D8938C000159A2 /* logo.png */; };
 		8A828184AF7B482FB610A8E9 /* libPods-Mapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F59B75F7AF1C4B7695C02F44 /* libPods-Mapp.a */; };
 		F57E78D119D7139E009BA4F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E78D019D7139E009BA4F2 /* main.m */; };
 		F57E78D419D7139E009BA4F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E78D319D7139E009BA4F2 /* AppDelegate.m */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		24ABBC6719D87353000159A2 /* OfflineLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineLayerViewController.h; sourceTree = "<group>"; };
 		24ABBC6819D87353000159A2 /* OfflineLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineLayerViewController.m; sourceTree = "<group>"; };
+		24ABBC6A19D8938C000159A2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		9D37C376C5F1EAD4BB508884 /* Pods-Mapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mapp/Pods-Mapp.debug.xcconfig"; sourceTree = "<group>"; };
 		E2DEFFEB0140F496EC2B09C8 /* Pods-Mapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mapp/Pods-Mapp.release.xcconfig"; sourceTree = "<group>"; };
 		F50F2E5E19D7657E009A6157 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		F57E78CD19D7139E009BA4F2 /* Mapp */ = {
 			isa = PBXGroup;
 			children = (
+				24ABBC6A19D8938C000159A2 /* logo.png */,
 				24ABBC6719D87353000159A2 /* OfflineLayerViewController.h */,
 				24ABBC6819D87353000159A2 /* OfflineLayerViewController.m */,
 				F5A6A90619D7DED5003179AF /* Model */,
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F57E78DA19D7139E009BA4F2 /* Main.storyboard in Resources */,
+				24ABBC6B19D8938C000159A2 /* logo.png in Resources */,
 				F5A6A90519D7D6B7003179AF /* venues.json in Resources */,
 				F57E78DF19D7139E009BA4F2 /* LaunchScreen.xib in Resources */,
 				F57E78DC19D7139E009BA4F2 /* Images.xcassets in Resources */,
