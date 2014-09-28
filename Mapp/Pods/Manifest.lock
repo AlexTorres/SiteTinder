@@ -35,6 +35,9 @@ PODS:
     - GRMustache (= 6.8.3)
     - SMCalloutView (= 2.0)
   - MDCSwipeToChoose (0.2.1)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.7.1)
   - SMCalloutView (2.0)
 
 DEPENDENCIES:
@@ -43,6 +46,7 @@ DEPENDENCIES:
   - JSONModel
   - Mapbox-iOS-SDK
   - MDCSwipeToChoose
+  - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
@@ -53,6 +57,7 @@ SPEC CHECKSUMS:
   JSONModel: 634100aaacbd89811bc8a03da209356e5989c569
   Mapbox-iOS-SDK: f3c46afe1af0d8ea7863b33ba9e96d94606d4784
   MDCSwipeToChoose: 54f7b1675eff182cdc46c582360c7fca4c766a67
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
   SMCalloutView: c1906604d47c058400ade5c9d52ab98aa77b7e76
 
 COCOAPODS: 0.33.1
