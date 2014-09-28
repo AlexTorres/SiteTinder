@@ -41,11 +41,11 @@
     },
     {
       "id": 100004,
-      "name": "Milagros",
+      "name": "El Nevado",
       "lat": 5.044227098119786,
       "lng": -75.47239514424241,
       "img": [
-        "https://irs0.4sqi.net/img/general/width960/52437911_5DDPXVVuYrrIboATBh-HFXM0kC6uz1kGcViTGkFsR-Q.jpg",
+        "http://c1.staticflickr.com/3/2918/14742084492_9ef6fa5a92_z.jpg",
         "https://irs0.4sqi.net/img/general/width960/1960535_8OOCT-BiMn96NsNFB8hPzDB_erokgrcHGmZUd9L37k0.jpg"
       ]
     },
@@ -55,7 +55,7 @@
       "lat": 5.0489445833730136,
       "lng": -75.48287893717622,
       "img": [
-        "https://irs2.4sqi.net/img/general/width960/20074062_bJd3fjZ4TXWqj5sTmcf5MzA0PXAxAiFabXJ_3fTvbDQ.jpg",
+        "http://c1.staticflickr.com/5/4144/5008371234_7b20ac43fc_b.jpg",
         "https://irs1.4sqi.net/img/general/width960/20074062_9shPudIO-97VLFwDWXMsVGKYJHKMWJ68UqI-Q2B70oU.jpg"
       ]
     }
