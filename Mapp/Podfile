@@ -8,6 +8,7 @@ pod 'Mapbox-iOS-SDK'
 pod 'MDCSwipeToChoose'
 pod 'JSONModel'
 pod 'SDWebImage'
+pod 'Mapbox-iOS-SDK'
 end
 
 target "MappTests" do
