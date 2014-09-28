@@ -6,8 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VenuesModel.h"
 
 @interface OfflineLayerViewController : UIViewController
 
-@property (nonatomic,strong) NSArray *places;
+@property (nonatomic,strong) VenuesModel *places;
+- (IBAction)onBack:(id)sender;
 @end

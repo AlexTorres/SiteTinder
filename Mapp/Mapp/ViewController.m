@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "VenuesModel.h"
 #import "VenueModel.h"
+#import "OfflineLayerViewController.h"
 
 
 @interface ViewController ()
@@ -88,6 +89,15 @@
 - (IBAction)notMatchAction:(id)sender {
     [self.notMatchAnimationView startCanvasAnimation];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    OfflineLayerViewController *offlineView = (OfflineLayerViewController *) [segue destinationViewController];
+    offlineView.places = self.model;
+}
+
 
 
 @end

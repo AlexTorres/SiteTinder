@@ -38,7 +38,7 @@
                                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="LGO-0Q-u3q">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="CRQ-jc-Wfq" kind="show" id="wme-Jr-5QA"/>
+                                                <segue destination="CRQ-jc-Wfq" kind="presentation" identifier="map_segue" modalTransitionStyle="coverVertical" id="uTr-cQ-z0D"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -137,7 +137,7 @@
                         <viewControllerLayoutGuide type="bottom" id="YrN-1y-lRa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6J6-KG-Kg0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQq-9T-1Mw">
@@ -149,8 +149,11 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Mapp" id="fUt-MM-Tw6">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt;-" id="Ky6-I9-xh0">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="Ky6-I9-xh0">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="onBack:" destination="CRQ-jc-Wfq" id="w97-RQ-4pa"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
