@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MDCSwipeToChoose/MDCSwipeToChoose.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MDCSwipeToChooseDelegate> {
+    MDCSwipeToChooseViewOptions *options;
+   
+
+}
 
 
 @end

@@ -5,6 +5,8 @@ target "Mapp" do
 pod 'AFNetworking'
 pod 'Canvas'
 pod 'Mapbox-iOS-SDK'
+pod 'MDCSwipeToChoose'
+pod 'JSONModel'
 end
 
 target "MappTests" do

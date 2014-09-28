@@ -15,6 +15,9 @@
 		F57E78DC19D7139E009BA4F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57E78DB19D7139E009BA4F2 /* Images.xcassets */; };
 		F57E78DF19D7139E009BA4F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57E78DD19D7139E009BA4F2 /* LaunchScreen.xib */; };
 		F57E78EB19D7139E009BA4F2 /* MappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E78EA19D7139E009BA4F2 /* MappTests.m */; };
+		F5A6A90519D7D6B7003179AF /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = F5A6A90419D7D6B7003179AF /* venues.json */; };
+		F5A6A90919D7DEFF003179AF /* VenuesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A90819D7DEFF003179AF /* VenuesModel.m */; };
+		F5A6A90C19D7DF1B003179AF /* VenueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A90B19D7DF1B003179AF /* VenueModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,11 @@
 		F57E78E919D7139E009BA4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F57E78EA19D7139E009BA4F2 /* MappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MappTests.m; sourceTree = "<group>"; };
 		F59B75F7AF1C4B7695C02F44 /* libPods-Mapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A6A90419D7D6B7003179AF /* venues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = venues.json; sourceTree = "<group>"; };
+		F5A6A90719D7DEFF003179AF /* VenuesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesModel.h; sourceTree = "<group>"; };
+		F5A6A90819D7DEFF003179AF /* VenuesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesModel.m; sourceTree = "<group>"; };
+		F5A6A90A19D7DF1B003179AF /* VenueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueModel.h; sourceTree = "<group>"; };
+		F5A6A90B19D7DF1B003179AF /* VenueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,7 @@
 		F57E78CD19D7139E009BA4F2 /* Mapp */ = {
 			isa = PBXGroup;
 			children = (
+				F5A6A90619D7DED5003179AF /* Model */,
 				F57E78D219D7139E009BA4F2 /* AppDelegate.h */,
 				F57E78D319D7139E009BA4F2 /* AppDelegate.m */,
 				F57E78D519D7139E009BA4F2 /* ViewController.h */,
@@ -111,6 +120,7 @@
 		F57E78CE19D7139E009BA4F2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F5A6A90419D7D6B7003179AF /* venues.json */,
 				F57E78CF19D7139E009BA4F2 /* Info.plist */,
 				F57E78D019D7139E009BA4F2 /* main.m */,
 				F50F2E5E19D7657E009A6157 /* PrefixHeader.pch */,
@@ -133,6 +143,17 @@
 				F57E78E919D7139E009BA4F2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5A6A90619D7DED5003179AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6A90719D7DEFF003179AF /* VenuesModel.h */,
+				F5A6A90819D7DEFF003179AF /* VenuesModel.m */,
+				F5A6A90A19D7DF1B003179AF /* VenueModel.h */,
+				F5A6A90B19D7DF1B003179AF /* VenueModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F57E78DA19D7139E009BA4F2 /* Main.storyboard in Resources */,
+				F5A6A90519D7D6B7003179AF /* venues.json in Resources */,
 				F57E78DF19D7139E009BA4F2 /* LaunchScreen.xib in Resources */,
 				F57E78DC19D7139E009BA4F2 /* Images.xcassets in Resources */,
 			);
@@ -271,8 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F57E78D719D7139E009BA4F2 /* ViewController.m in Sources */,
+				F5A6A90C19D7DF1B003179AF /* VenueModel.m in Sources */,
 				F57E78D419D7139E009BA4F2 /* AppDelegate.m in Sources */,
 				F57E78D119D7139E009BA4F2 /* main.m in Sources */,
+				F5A6A90919D7DEFF003179AF /* VenuesModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

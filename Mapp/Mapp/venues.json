@@ -1,0 +1,63 @@
+{
+  "venues": [
+    {
+      "id": 100000,
+      "name": "Museo de Historia Natural",
+      "lat": 5.064301490783691,
+      "lng": -75.4812240600586,
+      "img": [
+        "https://irs1.4sqi.net/img/general/width960/j8mnj2phyI5ER8ECruHGxwHTuYBE7X-gX3lFhHPuz-s.jpg"
+      ]
+    },
+    {
+      "id": 100001,
+      "name": "Secretaría de Educación",
+      "lat": 5.06807898367365,
+      "lng": -75.51996165600175,
+      "img": [
+        "https://irs1.4sqi.net/img/general/width960/6278892_ko-XAeURDE88BHiuIdTxt9cEEuKjqkRuHBQpGHqSTMY.jpg"
+      ]
+    },
+    {
+      "id": 100002,
+      "name": "Arte Corporal Manizales",
+      "lat": 5.055580139160156,
+      "lng": -75.48674774169922,
+      "img": [
+        "https://irs2.4sqi.net/img/general/width960/39641810_HcndckvAgZ72tpmk57-IpQYJWQcFTsblki2oDx01sE8.jpg",
+        "https://irs2.4sqi.net/img/general/width960/39641810_pOIXTgWlP3JCNB9AoShRRIf0Tv1zVclS7QwBiOUah-8.jpg"
+      ]
+    },
+    {
+      "id": 100003,
+      "name": "Mr. Jack Arte Bar",
+      "lat": 5.060157066054891,
+      "lng": -75.48752046879163,
+      "img": [
+        "https://irs1.4sqi.net/img/general/width960/45785397_JECNj7v6ltlNBSjBgZ3WEsTLQIkLuZq48R0aQmO_BSU.jpg",
+        "https://irs0.4sqi.net/img/general/width960/43645128_Ac-0X0mFNk9dB2fGMY4g_zJ2PBNf0yG4t6f2IPKTnSU.jpg",
+        "https://irs1.4sqi.net/img/general/width960/45785397_YD2Vn3iZKd-LfgYuPMtgJbsQhjlvEyqqdHctcGNqeV8.jpg"
+      ]
+    },
+    {
+      "id": 100004,
+      "name": "Milagros",
+      "lat": 5.044227098119786,
+      "lng": -75.47239514424241,
+      "img": [
+        "https://irs0.4sqi.net/img/general/width960/52437911_5DDPXVVuYrrIboATBh-HFXM0kC6uz1kGcViTGkFsR-Q.jpg",
+        "https://irs0.4sqi.net/img/general/width960/1960535_8OOCT-BiMn96NsNFB8hPzDB_erokgrcHGmZUd9L37k0.jpg"
+      ]
+    },
+    {
+      "id": 100005,
+      "name": "Barcelona Bar",
+      "lat": 5.0489445833730136,
+      "lng": -75.48287893717622,
+      "img": [
+        "https://irs2.4sqi.net/img/general/width960/20074062_bJd3fjZ4TXWqj5sTmcf5MzA0PXAxAiFabXJ_3fTvbDQ.jpg",
+        "https://irs1.4sqi.net/img/general/width960/20074062_9shPudIO-97VLFwDWXMsVGKYJHKMWJ68UqI-Q2B70oU.jpg"
+      ]
+    }
+  ]
+}

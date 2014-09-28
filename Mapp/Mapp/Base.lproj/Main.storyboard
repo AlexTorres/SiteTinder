@@ -71,6 +71,7 @@
                                         <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="type" value="pop"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="pauseAnimationOnAwake" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcg-Wd-w5M" customClass="CSAnimationView">
@@ -101,6 +102,7 @@
                                         <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="type" value="pop"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="pauseAnimationOnAwake" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
