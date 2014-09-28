@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "VenuesModel.h"
+#import "VenueModel.h"
 
 
 @interface ViewController ()
@@ -16,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIView *matchContainer;
 @property (weak, nonatomic) IBOutlet CSAnimationView *matchAnimationView;
 @property (weak, nonatomic) IBOutlet CSAnimationView *notMatchAnimationView;
+@property (strong, nonatomic) VenuesModel * model;
 
 @end
 
@@ -26,7 +28,7 @@
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"venues" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     NSError *error;
-    VenuesModel *model = [[VenuesModel alloc] initWithData:data error:&error];
+    self.model = [[VenuesModel alloc] initWithData:data error:&error];
     if (error) {
         
     } else {
@@ -44,8 +46,9 @@
                 
             }
         };
-        for (int i = 0; i<model.venues.count; i++) {
-            [self createSwipeView];
+        for (int i = 0; i<self.model.venues.count; i++) {
+            VenueModel * venue = (VenueModel*) self.model.venues[i];
+            [self createSwipeViewWithImageURL:venue.img [0]];
         }
     }
 
@@ -54,10 +57,20 @@
     // Do any additional setup after loading the view, typically from a nib.
     
 }
-- (void) createSwipeView {
+- (void) createSwipeViewWithImageURL:(NSString*)imageURL{
     MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.matchContainer.frame
-                                                                     options:options];
-    view.backgroundColor =[UIColor blueColor];
+                                                                   options:options];
+    CGRect photoFrame =  CGRectMake(0, 0, self.matchContainer.frame.size.width, self.matchContainer.frame.size.height);
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:photoFrame];
+    view.clipsToBounds = YES;
+    
+    [view addSubview:imageView];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:imageURL]];
+    view.backgroundColor =[UIColor colorWithRed:0.95f green:0.95f blue:1.95f alpha:1.0f];
+    [view sendSubviewToBack:imageView];
+    imageView.contentMode = UIViewContentModeCenter;
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    
     // view.imageView.image = [UIImage imageNamed:@"photo"];
    [self.view addSubview:view];
 }
